@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f lab1/requirements.txt ]; then pip install -r lab1/requirements.txt; fi
+          pip install -r lab1/requirements.txt
 
       - name: Lint with pycodestyle
         run: |
