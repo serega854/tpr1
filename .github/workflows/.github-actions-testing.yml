@@ -26,8 +26,10 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f lab1/test/requirements.txt ]; then pip install -r lab1/test/requirements.txt; fi
 
-
+      - name: Lint with pycodestyle
+        run: |
+          python -m pycodestyle lab1/src
       - name: Test with pytest
         run: |
-          python -m pytest lab1/data/test
+          python -m pytest lab1/src
 
