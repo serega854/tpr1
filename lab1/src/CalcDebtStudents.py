@@ -1,6 +1,5 @@
 from typing import List, Tuple, Dict
 
-
 DataType = Dict[str, List[Tuple[str, float]]]
 
 class CalcThirdQuartileStudents:
