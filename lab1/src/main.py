@@ -18,18 +18,15 @@ def get_path_from_arguments(args) -> str:
 def main():
     path = get_path_from_arguments(sys.argv[1:])
 
-    if path.endswith(".json"):
-        reader = DataReaderJson()
-    else:
-        reader = TextDataReader()
+    
+    reader = TextDataReader()
 
     students = reader.read(path)
     print("Students: ", students)
     rating = CalcRating(students).calc()
     print("Rating: ", rating)
 
-    student_above_90 = CaclRating90points(students)
-    student_above_90.print_result()
+
 
 
 if __name__ == "__main__":
