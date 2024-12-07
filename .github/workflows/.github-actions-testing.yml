@@ -28,7 +28,7 @@ jobs:
 
       - name: Lint with pycodestyle
         run: |
-          python -m lab1.src.main -p lab1\data\data.txt-m pycodestyle  
+          python -m pycodestyle  
 
       - name: Test with pytest
         run: |
