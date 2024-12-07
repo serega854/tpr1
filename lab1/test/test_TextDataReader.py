@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pytest
-from src.Types import DataType
-from src.TextDataReader import TextDataReader
+from lab1.src.Types import DataType
+from lab1.src.TextDataReader import TextDataReader
 
 
 class TestTextDataReader:
