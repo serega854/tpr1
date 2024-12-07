@@ -28,7 +28,8 @@ jobs:
 
       - name: Lint with pycodestyle
         run: |
-          python -m pycodestyle lab1/test
+          python -m pycodestyle lab1/src lab1/test
+
       - name: Test with pytest
         run: |
           python -m pytest lab1/test
