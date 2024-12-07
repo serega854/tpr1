@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from lab1.rating.src.main import get_path_from_arguments
 import pytest
 
 

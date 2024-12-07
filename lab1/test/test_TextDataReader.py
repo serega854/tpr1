@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 import pytest
-from lab1.rating.src.Types import DataType
-from lab1.rating.src.TextDataReader import TextDataReader
-
 
 class TestTextDataReader:
     @pytest.fixture()
