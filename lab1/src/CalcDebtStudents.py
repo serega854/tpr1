@@ -1,5 +1,6 @@
 from typing import List, Tuple, Dict
 
+
 DataType = Dict[str, List[Tuple[str, float]]]
 
 class CalcThirdQuartileStudents:
@@ -9,9 +10,7 @@ class CalcThirdQuartileStudents:
 
     def calculate_third_quartile(self) -> float:
         """Вычислить и вернуть третий квартиль оценок."""
-    
         all_scores = [score for subjects in self.data.values() for _, score in subjects]
-
         all_scores.sort()
 
         n = len(all_scores)
