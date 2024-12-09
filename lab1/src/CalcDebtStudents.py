@@ -3,6 +3,7 @@ import numpy as np
 from .Types import DataType
 from .DataReader import DataReader
 
+
 class CalcDebtStudents:
     def __init__(self, data: DataType):
         self.data = data
