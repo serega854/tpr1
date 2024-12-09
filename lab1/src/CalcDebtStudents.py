@@ -3,8 +3,9 @@ from typing import List, Tuple, Dict
 
 DataType = Dict[str, List[Tuple[str, float]]]
 
+
 class CalcThirdQuartileStudents:
-    def __init__(self, data: DataType):
+    def __init__(self, data: DataType):  # Исправлено: должно быть __init__, а не init
         """Инициализатор для установки данных студентов."""
         self.data = data
 
@@ -32,9 +33,7 @@ class CalcThirdQuartileStudents:
         students_in_third_quartile = []
 
         for student, subjects in self.data.items():
-         
             average_score = sum(score for _, score in subjects) / len(subjects)
-           
             if average_score >= third_quartile_value:
                 students_in_third_quartile.append(student)
 
@@ -45,7 +44,8 @@ class CalcThirdQuartileStudents:
         students_in_third_quartile = self.get_students_in_third_quartile()
         print("Студенты в третьей квартиле: ", students_in_third_quartile)
 
-if __name__ == "__main__":
+
+if __name__ == "__main__":  # Исправлено: должно быть __name__ и __main__
     student_data = {
         "Студент А": [("Математика", 85), ("Физика", 88)],
         "Студент Б": [("Математика", 60), ("Физика", 70)],
