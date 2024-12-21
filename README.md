@@ -17,7 +17,7 @@
 
 ## UML-диаграмма
 <div id="header" align="center">
-  <img src="" width="700"/>
+  <img src="https://github.com/serega854/tpr1/blob/main/1.PNG" width="700"/>
   <p> Рисунок 1 – UML-диаграмма классов </p> 
 </div>
 
